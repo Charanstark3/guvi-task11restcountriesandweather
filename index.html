@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Countries & Weather</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Title -->
+    <h1 id="title" class="text-center my-4">Rest Countries & Weather API</h1>
+
+    <!-- Description -->
+    <p id="description" class="text-center">This application displays information about countries and their current weather.</p>
+
+    <!-- Form -->
+    <form id="survey-form" class="survey-form">
+        <!-- First Name -->
+        <div class="form-group">
+            <label id="name-label" for="first-name">First Name</label>
+            <input type="text" class="form-control" id="first-name" name="first-name" placeholder="Enter your first name" required>
+        </div>
+
+        <!-- Last Name -->
+        <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" class="form-control" id="last-name" name="last-name" placeholder="Enter your last name" required>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div class="form-group">
+            <p>Gender</p>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+        </div>
+
+        <!-- Comments -->
+        <div class="form-group">
+            <label for="comments">Additional Comments</label>
+            <textarea class="form-control" id="comments" name="comments" rows="4" placeholder="Enter your comments"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+    </form>
+
+    <!-- Country Cards Container -->
+    <div class="container">
+        <div class="row" id="countries-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
